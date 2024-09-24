@@ -1,0 +1,81 @@
+.about-section {
+  background-color: #0d1726;
+  color: #ffffff;
+  padding: 50px 0;
+  font-family: "Segoe UI";
+}
+
+.about-container {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 45px;
+  margin-bottom: 20px;
+  color: #00bfff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.about-description {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: #d1d1d1;
+}
+
+.highlight {
+  color: #00bfff;
+  font-weight: bold;
+}
+
+.about-image {
+  margin: 40px 0;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.about-image video {
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature {
+  width: 30%;
+  background-color: #1b263b;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.feature h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #00bfff;
+}
+
+.feature p {
+  font-size: 16px;
+  color: #d1d1d1;
+}
+
+@media (max-width: 768px) {
+  .feature {
+    width: 100%;
+  }
+
+  .about-title {
+    font-size: 36px;
+  }
+}

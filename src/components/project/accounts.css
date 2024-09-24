@@ -1,0 +1,108 @@
+/* accounts.css */
+.accounts-page {
+  background-color: #0d1726;
+    color: #fff;
+    font-family: "Segoe UI", sans-serif;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .accounts-header {
+    margin-bottom: 40px;
+  }
+  
+  .accounts-header h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #00bfff;
+  }
+  
+  .accounts-header p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  .account-content {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 40px;
+  }
+  
+  .account-section {
+    background-color: #162542;
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px; /* Increased max-width to make it wider */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .account-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #e7c643 ;
+  }
+  
+  .account-section p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    
+  }
+  
+  .account-section ul {
+    text-align: left;
+    margin-bottom: 20px;
+    
+  }
+  
+  .account-section ul li {
+    list-style-type: disc;
+    margin-left: 20px;
+    line-height: 1.5;
+    
+  }
+  
+  .create-account-btn, .sign-in-btn {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .create-account-btn:hover, .sign-in-btn:hover {
+   
+    transform: scale(1.05);
+  }
+  
+  .create-account-btn:active, .sign-in-btn:active {
+    transform: scale(1.02);
+  }
+  
+  @media (max-width: 1024px) {
+    .account-section {
+      max-width: 80%; /* Wider layout for tablets and medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .account-content {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .account-section {
+      width: 100%;
+      max-width: 100%; /* Full width on small screens */
+    }
+  }
+  

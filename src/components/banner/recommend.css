@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.recommend {
+  color: #fff;
+  background-color: #0d1726;
+  padding: 5px;
+}
+
+#p3 {
+  font-size: 28px;
+  color: #e7c643;
+}
+
+.innerdiv {
+  margin-top: 40px;
+  margin-left: 15%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border-radius: 10px;
+  width: 70%;
+  align-items: center;
+}
+
+.recommend p {
+  text-align: center;
+  font-size: 17px;
+}
+
+/* Media Query for Phones */
+@media (max-width: 768px) {
+  #p3 {
+    font-size: 20px; /* Reduce font size */
+  }
+
+  .innerdiv {
+    margin-left: 5%; /* Reduce margin for smaller screens */
+    width: 90%; /* Use more width */
+  }
+
+  .recommend p {
+    font-size: 15px; /* Adjust font size for readability */
+  }
+}

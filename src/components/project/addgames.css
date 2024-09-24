@@ -1,0 +1,65 @@
+.new-add-game-wrapper {
+  background-image: url(/public/assets/images/game.jpg);
+  padding: 20px;
+  
+}
+
+.new-add-game-header {
+  text-align: center;
+  margin-bottom: 20px;
+  color:white;
+  font-weight: bold;
+  /* text-decoration: underline; */
+  font-size: 24px;
+}
+
+.new-add-game-form {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+  color: white;
+}
+
+.new-add-game-form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-add-game-label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: white; /* Consistent color for labels */
+}
+
+.new-add-game-input,
+.new-add-game-textarea,
+.new-add-game-select,
+.new-add-game-file {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #00bfff; /* Light border to add definition */
+  border-radius: 5px;
+  background-color: #112240; /* Darker shade for the input fields */
+  color: white;
+}
+
+.new-add-game-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.new-add-game-file {
+  padding: 6px;
+}
+
+
+
+@media (min-width: 768px) {
+  .new-add-game-form {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .new-add-game-textarea {
+    grid-column: span 2;
+  }
+}

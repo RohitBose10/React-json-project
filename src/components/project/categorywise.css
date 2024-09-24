@@ -1,0 +1,144 @@
+/* Main page container */
+.categorywise-page-container {
+  padding: 20px;
+  background-color: #0d1726;
+  color: #ffffff;
+}
+
+/* Center Browse Category Header */
+.browse-category-header {
+  text-align: center;
+  font-size: 36px;
+  color: #00bfff;
+}
+
+.search-container {
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  border-radius: 50px;
+  border: none;
+}
+
+/* Carousel container */
+.categorywise-carousel-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/* Carousel item container */
+.categorywise-carousel-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: #0d1726;
+  border-radius: 15px;
+}
+
+/* Category item */
+.categorywise-category-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 340px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.categorywise-category-item:hover {
+  transform: scale(1.03);
+}
+
+/* Category image */
+.categorywise-category-image {
+  height: 310px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Category name styling */
+.category-name {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #ffffff;
+  background-color: #0d1726;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Add Game Section */
+.add-game-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.add-game-text {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.games-add-btn {
+  padding: 12px 20px !important;
+  border: none;
+  border-radius: 8px;
+  background-color: blue !important;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.games-add-btn:hover {
+  background-color: blue !important;
+  transform: scale(1.05);
+}
+
+/* Media Query for Phones */
+@media (max-width: 768px) {
+  .browse-category-header {
+    font-size: 28px; /* Reduce header font size */
+  }
+
+  .search-container {
+    max-width: 90%; /* Use more width on smaller screens */
+  }
+
+  .categorywise-category-item {
+    width: 90%; /* Full width for category items */
+    margin: 10px auto; /* Center items */
+  }
+
+  .categorywise-carousel-item {
+    flex-direction: row; /* Stack items vertically */
+    align-items: center; /* Center align items */
+    padding: 10px; /* Reduce padding */
+  }
+
+  .categorywise-category-image {
+    height: 180px; /* Adjust image height */
+  }
+
+  .add-game-text {
+    font-size: 1rem; /* Reduce font size */
+  }
+
+  .games-add-btn {
+    font-size: 14px; /* Adjust button font size */
+    padding: 10px 15px; /* Adjust button padding */
+  }
+}

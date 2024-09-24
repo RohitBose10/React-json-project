@@ -1,0 +1,138 @@
+/* General Page Styling */
+.unique-details-page {
+  background-color: #0d1726;
+  color: #ffffff;
+  padding: 40px;
+  min-height: 100vh;
+}
+
+/* Header Styling */
+.unique-details-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.unique-details-header h2 {
+  font-size: 2rem;
+  color: #00bfff;
+}
+
+/* Main Content Layout - Make it column but wider */
+.unique-details-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Image Section */
+.unique-details-image-section {
+  width: 100%;
+  max-width: 1000px; /* Increased this value to widen the image container */
+  display: flex;
+  justify-content: center;
+}
+
+.unique-details-image-section img {
+  width: 100%;
+  height: auto; /* Keeps height responsive */
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Info Section - make it centered and wider below the image */
+.unique-details-info-section {
+  width: 100%;
+  max-width: 1000px; /* Increased this value to widen the details container */
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px; /* Decreased padding for reduced height */
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Info Card */
+.unique-info-card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Adjusted gap */
+}
+
+.unique-details-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 10px 0; /* Reduced padding for height */
+}
+
+.unique-details-row h5 {
+  font-size: 1.3rem;
+  color: #ffffff;
+}
+
+.unique-details-row h4 {
+  color: #e7c643;
+  font-size: 2rem;
+}
+
+.unique-details-row h3 {
+  color: #00ffb3;
+  font-size: 2rem;
+}
+
+.unique-details-row h6 {
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+
+
+/* Buttons */
+.unique-details-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px; /* Adjusted margin */
+}
+
+.unique-buy-button,
+.unique-edit-button {
+  padding: 10px 20px; /* Reduced padding */
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.unique-buy-button {
+  background-color: limegreen;
+  color: white;
+}
+
+.unique-buy-button:hover {
+  background-color: darkgreen;
+}
+
+.unique-edit-button {
+  background-color: blue;
+  color: white;
+}
+
+.unique-edit-button:hover {
+  background-color: darkblue;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  .unique-details-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .unique-details-image-section,
+  .unique-details-info-section {
+    max-width: 100%; /* Ensure both sections take full width on mobile */
+  }
+}

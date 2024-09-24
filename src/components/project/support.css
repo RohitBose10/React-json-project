@@ -1,0 +1,116 @@
+.support-page {
+  background-color: #0d1726;
+  color: #fff;
+  font-family: "Segoe UI";
+  text-align: center;
+  padding: 20px;
+}
+
+.support-header {
+  margin-bottom: 30px;
+}
+
+.status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.status-text {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.status-indicator {
+  color: green;
+  font-weight: bold;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0;
+}
+
+.category {
+  flex-basis: 30%;
+  transition: transform 0.3s ease;
+}
+
+.category:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.category img {
+  height: 250px; /* Fixed height for category images */
+  width: 100%;
+  object-fit: cover; /* Ensures images cover the area */
+  border-radius: 10px;
+}
+
+.game-section {
+  margin: 80px 0;
+}
+
+.game-tiles {
+  display: flex;
+  justify-content: space-around;
+}
+
+.game-tile {
+  flex-basis: 30%;
+  transition: transform 0.3s ease;
+}
+
+.game-tile:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.game-tile img {
+  height: 250px; /* Fixed height for game images */
+  width: 100%;
+  object-fit: cover; /* Ensures images cover the area */
+  border-radius: 10px;
+}
+
+h1,
+h2 {
+  color: #fff;
+}
+
+/* Media Query for Phones */
+@media (max-width: 768px) {
+  .categories, .game-tiles {
+    flex-direction: row; /* Stack categories and game tiles vertically */
+    align-items: center; /* Center align items */
+  }
+
+  .category, .game-tile {
+    flex-basis: 80%; /* Increase width for smaller screens */
+    margin-bottom: 20px; /* Add spacing between items */
+  }
+  .category img, .game-tile img {
+    height: 150px; /* Set a uniform height */
+    width: 100%; /* Ensures full width */
+    object-fit: cover; /* Ensures the image covers the area */
+  }
+
+  .status {
+    flex-direction: column; /* Stack status elements vertically */
+  }
+
+  .status-text {
+    font-size: 14px; /* Adjust font size */
+  }
+
+  h1 {
+    font-size: 1.8rem; /* Adjust heading size for phones */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* Adjust heading size for phones */
+  }
+}

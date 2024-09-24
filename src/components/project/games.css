@@ -1,0 +1,147 @@
+/* Main page container */
+.games-page-container {
+  padding: 20px;
+  background-color: #0d1726;
+  color: #ffffff;
+  text-align: center; /* Centering the content */
+}
+
+/* Category name heading */
+.games-page-container h3 {
+  text-align: center; /* Center the category name */
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #00bfff;
+}
+
+/* Add Game button */
+.games-add-btn {
+  background-color: #0056b3;
+  color: white;
+  border: 2px solid #00bfff; /* Adding a border */
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s, transform 0.3s; /* Transition for hover effect */
+}
+
+.games-add-btn:hover {
+  background-color: #004494;
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Carousel container */
+.games-carousel-container {
+ 
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/* Carousel item container */
+.games-carousel-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: #0d1726;
+  border-radius: 15px;
+}
+
+/* Game item container */
+.games-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 335px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.games-item:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Game image */
+.games-image {
+  height: 250px;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Game info */
+.game-info {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.game-info h3 {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.game-info p {
+  color: #ffffff;
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+/* Unique delete button */
+.unique-delete-button {
+  background-color: #ff3d3d; /* Red background for delete button */
+  color: white;
+  border: 2px solid #ffffff; /* White border */
+  padding: 5px 100px;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+}
+
+.unique-delete-button:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+}
+
+/* Media Query for Phones */
+@media (max-width: 768px) {
+  .games-page-container {
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  .games-page-container h3 {
+    font-size: 28px; /* Adjust font size for category name */
+  }
+
+  .games-add-btn,
+  .unique-delete-button {
+    padding: 8px 16px; /* Adjust padding for buttons */
+    width: 100%; /* Full width for smaller screens */
+  }
+
+  .games-carousel-container {
+    gap: 30px; /* Space between carousel items */
+  }
+
+  .games-carousel-item {
+    padding: 15px; /* Adjust padding */
+  }
+
+  .games-item {
+    width: 90%; /* Use more width on smaller screens */
+    margin-bottom: 20px; /* Add space below each game item */
+  }
+
+  .games-image {
+    height: 150px; /* Reduce image height */
+  }
+
+  .game-info h3 {
+    font-size: 1rem; /* Adjust font size for game titles */
+  }
+
+  .game-info p {
+    font-size: 0.9rem; /* Adjust font size for game descriptions */
+  }
+}

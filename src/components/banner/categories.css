@@ -1,0 +1,80 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.featured-section {
+  padding: 20px;
+  background-color: #0d1726;
+  color: white;
+  text-align: center;
+}
+
+#p2, #p4 {
+  color: white;
+  background-color: #0d1726;
+  font-size: 20px;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+
+.multi-item-carousel .carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item-content .col-3 {
+  padding: 5px;
+}
+
+/* Image and hover effects */
+.carousel-item-content img {
+  border-radius: 10px;
+  object-fit: cover;
+  height: 325px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.carousel-item-content img:hover {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+.category-caption {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 18px;
+  color: white;
+}
+
+/* Media Query for Phones */
+@media (max-width: 768px) {
+  .featured-section {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  #p2, #p4 {
+    font-size: 16px; /* Reduce font size */
+    padding-top: 5px; /* Adjust padding */
+    padding-bottom: 15px; /* Adjust padding */
+  }
+
+  .carousel-item-content img {
+    /* Allow images to scale properly */
+    max-height: 200px; /* Set a max height for mobile */
+  }
+
+  .category-caption {
+    font-size: 16px; /* Adjust font size */
+  }
+}

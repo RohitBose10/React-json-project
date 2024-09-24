@@ -1,0 +1,54 @@
+.thank-you-wrapper {
+  background-color: #0d1726; /* Background color matching your site */
+  color: white; /* Text color */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Full height */
+  padding: 20px;
+}
+
+.thank-you-header {
+  font-size: 2.5rem;
+  color: #00bfff; /* Highlight color for the header */
+  margin-bottom: 20px;
+}
+
+.thank-you-message {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.thank-you-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  background-color: limegreen; /* Button color */
+  color: white; /* Button text color */
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.thank-you-button:hover {
+  background-color: darkgreen; /* Darker shade on hover */
+}
+
+/* Media Query for Phones */
+@media (max-width: 768px) {
+  .thank-you-header {
+    font-size: 2rem; /* Adjust font size for header */
+  }
+
+  .thank-you-message {
+    font-size: 1rem; /* Adjust font size for message */
+    margin-bottom: 30px; /* Reduce margin for smaller screens */
+  }
+
+  .thank-you-button {
+    padding: 10px 20px; /* Adjust padding for button */
+    font-size: 1rem; /* Adjust font size for button */
+  }
+}

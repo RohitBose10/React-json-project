@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI";
+}
+
+.navlist {
+  height: 125px;
+  width: 100%;
+  background-color: #0a1128;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.logo img {
+  width: 160px;
+  height: auto;
+}
+
+.navbar-nav .nav-link-text,
+#navbarScrollingDropdown,
+.nav-link {
+  color: white !important;
+  text-decoration: none;
+}
+
+.nav-link-text:hover,
+#navbarScrollingDropdown:hover,
+.nav-link:hover {
+  color: #e7c643 !important;
+}
+
+.navbar-nav .nav-link-text,
+.nav-link {
+  margin: 0 10px; /* Equal space between all links */
+}
+
+#navbarScrollingDropdown {
+  margin-right: 15px;
+}
+
+/* Dropdown menu */
+.navbar-nav .dropdown-menu {
+  background-color: white;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+  .navlist {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .navbar-brand img {
+    width: 120px;
+  }
+
+  .nav-link-text {
+    font-size: 18px;
+    padding: 10px 0;
+  }
+}

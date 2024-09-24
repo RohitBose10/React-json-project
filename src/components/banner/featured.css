@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.featured-games-container {
+  text-align: center;
+}
+
+#p1 {
+  color: white;
+  background-color: #0d1726;
+  font-size: 20px;
+  width: 100%;
+  padding: 25px;
+}
+
+.carousel-item {
+  transition: transform 1s ease-in-out !important; /* Change left to transform for smoother effect */
+}
+
+.carousel-item img {
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.carousel-caption h4 {
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.carousel-caption h5 {
+  color: #e7c643;
+}
+
+.carousel-caption h3 {
+  color: #e7c643;
+}
+
+/* Media Query for Phones */
+@media (max-width: 768px) {
+  #p1 {
+    font-size: 16px; /* Reduce font size */
+    padding: 15px; /* Adjust padding */
+  }
+
+  .carousel-caption h4, .carousel-caption h5, .carousel-caption h3 {
+    font-size: 16px; /* Adjust font size for captions */
+  }
+
+  .carousel-item img {
+    max-height: 300px; /* Set a max height for images on mobile */
+    
+  }
+}

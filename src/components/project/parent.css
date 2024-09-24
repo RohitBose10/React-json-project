@@ -1,0 +1,120 @@
+.parent-support-page {
+  background-color: #0d1726; /* Dark background for the entire page */
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  margin: 0;
+  min-height: 100vh; /* Ensure full height for better visual effect */
+}
+
+.parent-support-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.parent-support-header h2 {
+  font-size: 36px;
+  color: #00bfff; /* Light blue for the header */
+}
+
+.parent-support-header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.parent-support-content {
+  max-width: 1100px; /* Limiting width to avoid stretching content */
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.support-section {
+  margin-bottom: 40px;
+  padding: 20px;
+  border-left: 5px solid #e7c643; /* Adding an accent color for each section */
+  background-color: #212b45;
+  border-radius: 8px;
+}
+
+.support-section h2 {
+  font-size: 2rem;
+  color: #e7c643; /* Yellow-orange for section headers */
+}
+
+.support-section p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.support-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.support-section ul li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.support-section a {
+  color: #4fc3f7; /* Blue for links */
+  text-decoration: none;
+}
+
+.parent-support-footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1rem;
+  padding: 20px;
+  background-color: #1a2338;
+  border-radius: 8px;
+}
+
+.parent-support-footer a {
+  color: limegreen; /* Green for footer links */
+  text-decoration: none;
+}
+
+.parent-support-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Media Query for Phones */
+@media (max-width: 768px) {
+  .parent-support-page {
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  .parent-support-header h2 {
+    font-size: 28px; /* Adjust font size for header */
+  }
+
+  .parent-support-header p {
+    font-size: 1rem; /* Adjust font size for paragraph */
+  }
+
+  .parent-support-content {
+    padding: 15px; /* Adjust padding */
+  }
+
+  .support-section {
+    padding: 15px; /* Adjust padding for sections */
+  }
+
+  .support-section h2 {
+    font-size: 1.5rem; /* Adjust font size for section headers */
+  }
+
+  .support-section p {
+    font-size: 1rem; /* Adjust font size for section paragraphs */
+  }
+
+  .support-section ul li {
+    font-size: 1rem; /* Adjust font size for list items */
+  }
+
+  .parent-support-footer {
+    font-size: 0.9rem; /* Adjust footer font size */
+  }
+}

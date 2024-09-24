@@ -1,0 +1,91 @@
+.editgame-wrapper {
+  background-image: url(/public/assets/images/game.jpg);
+  padding: 20px;
+  
+}
+
+.editgame-header {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+  font-weight: bold;
+  /* text-decoration: underline;  */
+  font-size: 24px;
+}
+.editgame-form-container {
+  background-color:#24364f;
+  padding: 45px; /* Padding for spacing */
+  border-radius: 10px; /* Rounded corners for a softer look */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.editgame-form {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+  color: white;
+}
+
+.editgame-form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.editgame-label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: white; /* Consistent color for labels */
+}
+
+.editgame-input,
+.editgame-textarea,
+.editgame-select,
+.editgame-file {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #00bfff; /* Light border to add definition */
+  border-radius: 5px;
+  background-color: #112240; /* Darker shade for the input fields */
+  color: white;
+}
+
+.editgame-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.editgame-file {
+  padding: 6px;
+}
+
+.editgame-button-container {
+  display: flex;
+  justify-content: center; /* Center the button */
+}
+
+.editgame-button {
+  width: 100%; /* Make the button take full width */
+  padding: 15px !important;
+  border: none !important;
+  border-radius: 8px !important;
+  color:white !important;
+  background-color: limegreen !important; /* Matches the primary color of your site */
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.3s ease !important;
+}
+
+.editgame-button:hover {
+ 
+  transform: scale(1.01);
+}
+
+
+@media (min-width: 600px) {
+  .editgame-form {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .editgame-textarea {
+    grid-column: span 2;
+  }
+}
