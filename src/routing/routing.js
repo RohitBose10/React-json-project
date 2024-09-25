@@ -20,6 +20,7 @@ import AccountsPage from "../components/project/accounts";
 import PaymentsPage from "../components/project/payment";
 import Purchase from "../components/project/purchase";
 import ScrollToTop from "../components/project/scroll";
+import PageNotFound from "../components/project/pnf";
 
 const Routing = () => {
   return (
@@ -44,6 +45,7 @@ const Routing = () => {
         <Route path="parent" element={<ParentGuardianSupport />} />
         <Route path="account" element={<AccountsPage />} />
         <Route path="payment" element={<PaymentsPage />} />
+        <Route path="*" element={<PageNotFound/>}/>
       </Routes>
       <Footer />
     </Router>

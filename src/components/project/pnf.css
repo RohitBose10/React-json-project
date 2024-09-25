@@ -1,0 +1,34 @@
+.not-found-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0a1128; /* Company's background color */
+    color: white;
+  }
+  
+  .not-found-title {
+    font-size: 6rem;
+    margin: 0;
+  }
+  
+  .not-found-text {
+    font-size: 1.5rem;
+    margin: 20px 0;
+  }
+  
+  .back-home-btn {
+    background-color: #24364f; /* Form background color for consistency */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-home-btn:hover {
+    background-color: #1a2b3e; /* Slightly darker hover effect */
+  }
+  
