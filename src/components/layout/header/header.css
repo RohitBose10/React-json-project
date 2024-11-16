@@ -1,18 +1,18 @@
+/* General styles */
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
 }
 
 .navlist {
-  height: 125px;
   width: 100%;
   background-color: #0a1128;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  padding: 10px 0;
 }
 
 .logo img {
@@ -20,47 +20,79 @@
   height: auto;
 }
 
-.navbar-nav .nav-link-text,
-#navbarScrollingDropdown,
-.nav-link {
-  color: white !important;
-  text-decoration: none;
+/* Navbar container customization */
+.navbar-collapse-custom {
+  display: flex;
+  justify-content: space-between; /* Space between center and right sections */
+  align-items: center;
 }
 
-.nav-link-text:hover,
-#navbarScrollingDropdown:hover,
-.nav-link:hover {
+.navbar-center {
+  flex: 1; /* Use available space */
+  display: flex;
+  justify-content: center; /* Center navigation links */
+}
+
+.navbar-right {
+  display: flex;
+  justify-content: flex-end; /* Right-align dropdown */
+  align-items: center;
+}
+
+.nav-link-text,
+#navbarScrollingDropdown {
+  color: white !important;
+  text-decoration: none;
+  font-size: 20px !important;
+  margin: 0 10px;
+}
+
+.nav-link-text:hover {
   color: #e7c643 !important;
 }
 
-.navbar-nav .nav-link-text,
-.nav-link {
-  margin: 0 10px; /* Equal space between all links */
-}
-
-#navbarScrollingDropdown {
-  margin-right: 15px;
-}
-
-/* Dropdown menu */
+/* Dropdown menu customization */
 .navbar-nav .dropdown-menu {
   background-color: white;
 }
 
-/* Media Query for responsiveness */
+/* Media Queries for responsiveness */
 @media (max-width: 768px) {
   .navlist {
-    flex-direction: column;
-    align-items: flex-start;
     padding: 15px;
   }
 
-  .navbar-brand img {
+  .logo img {
     width: 120px;
   }
 
+  .navbar-collapse-custom {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-end; /* Align collapse to the right */
+  }
+
+  .navbar-center {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .navbar-right {
+    width: 100%; /* Stretch dropdown to full width */
+    justify-content: flex-end;
+  }
+
   .nav-link-text {
-    font-size: 18px;
-    padding: 10px 0;
+    font-size: 16px;
+    padding: 5px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo img {
+    width: 100px;
+  }
+
+  .nav-link-text {
+    font-size: 14px;
   }
 }

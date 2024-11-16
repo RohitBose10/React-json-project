@@ -8,9 +8,11 @@
   max-width: 1320px;
   margin: 0 auto;
 }
+
 .carousel-item {
-  transition: transform 1s ease-in-out !important; /* Change left to transform for smoother effect */
+  transition: transform 1s ease-in-out !important; 
 }
+
 .new-carousel-img {
   height: 400px;
   object-fit: cover;
@@ -31,10 +33,9 @@
   margin: 0 auto;
   padding: 1rem;
 }
-.carousel-caption {
-  
-  background-color: rgba(0, 0, 0, 0.5);
 
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 15px;
 }
 
@@ -61,3 +62,36 @@
   object-fit: cover;
 }
 
+/* Media query for smaller screens (iPhone SE) */
+@media screen and (max-width: 640px) {
+  /* Keep layout but adjust sizes */
+  .new-review-page {
+    padding: 1rem; /* Reduce padding on smaller screens */
+  }
+
+  .new-carousel-img, .new-carousel-placeholder {
+    height: 250px; /* Reduce image size for small screens */
+  }
+
+  .new-form-wrapper {
+    padding: 1rem; /* Reduce form padding */
+    flex-direction: column; /* Stack video and form vertically */
+  }
+
+  .video-container {
+    max-width: 100%; /* Ensure video container takes full width */
+  }
+
+  .new-form-container {
+    padding: 0.5rem; /* Reduce form container padding */
+  }
+
+  .col-md-6 {
+    width: 100%; /* Ensure columns take full width */
+  }
+
+  .new-submit-button {
+    font-size: 1rem; /* Adjust button size */
+    padding: 0.5rem; /* Adjust padding */
+  }
+}

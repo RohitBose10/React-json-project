@@ -3,12 +3,12 @@
   padding: 20px;
   background-color: #0d1726;
   color: #ffffff;
-  text-align: center; /* Centering the content */
+  text-align: center;
 }
 
 /* Category name heading */
 .games-page-container h3 {
-  text-align: center; /* Center the category name */
+  text-align: center;
   font-size: 36px;
   margin-bottom: 20px;
   color: #00bfff;
@@ -18,22 +18,21 @@
 .games-add-btn {
   background-color: #0056b3;
   color: white;
-  border: 2px solid #00bfff; /* Adding a border */
+  border: 2px solid #00bfff;
   padding: 10px 20px;
   margin-bottom: 20px;
   cursor: pointer;
-  border-radius: 5px; /* Rounded corners */
-  transition: background-color 0.3s, transform 0.3s; /* Transition for hover effect */
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .games-add-btn:hover {
   background-color: #004494;
-  transform: scale(1.05); /* Slight zoom effect on hover */
+  transform: scale(1.05);
 }
 
 /* Carousel container */
 .games-carousel-container {
- 
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -61,7 +60,7 @@
 }
 
 .games-item:hover {
-  transform: scale(1.05); /* Slight zoom effect on hover */
+  transform: scale(1.05);
 }
 
 /* Game image */
@@ -92,56 +91,94 @@
 
 /* Unique delete button */
 .unique-delete-button {
-  background-color: #ff3d3d; /* Red background for delete button */
+  background-color: #ff3d3d;
   color: white;
-  border: 2px solid #ffffff; /* White border */
-  padding: 5px 100px;
-  border-radius: 5px; /* Rounded corners */
+  border: 2px solid #ffffff;
+  padding: 5px 20px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
 .unique-delete-button:hover {
-  background-color: #d32f2f; /* Darker red on hover */
+  background-color: #d32f2f;
 }
 
-/* Media Query for Phones */
+/* Media Query for Tablets and Phones */
 @media (max-width: 768px) {
   .games-page-container {
-    padding: 15px; /* Reduce padding for smaller screens */
+    padding: 15px;
   }
 
   .games-page-container h3 {
-    font-size: 28px; /* Adjust font size for category name */
+    font-size: 28px;
   }
 
   .games-add-btn,
   .unique-delete-button {
-    padding: 8px 16px; /* Adjust padding for buttons */
-    width: 100%; /* Full width for smaller screens */
+    padding: 8px 16px;
+    width: 100%;
   }
 
   .games-carousel-container {
-    gap: 30px; /* Space between carousel items */
+    gap: 30px;
   }
 
   .games-carousel-item {
-    padding: 15px; /* Adjust padding */
+    padding: 15px;
+    flex-direction: column; /* Stack items vertically on smaller screens */
   }
 
   .games-item {
-    width: 90%; /* Use more width on smaller screens */
-    margin-bottom: 20px; /* Add space below each game item */
+    width: 100%;
+    margin-bottom: 20px;
   }
 
   .games-image {
-    height: 150px; /* Reduce image height */
+    height: 180px;
   }
 
   .game-info h3 {
-    font-size: 1rem; /* Adjust font size for game titles */
+    font-size: 1rem;
   }
 
   .game-info p {
-    font-size: 0.9rem; /* Adjust font size for game descriptions */
+    font-size: 0.9rem;
+  }
+}
+
+/* Additional Media Query for Extra Small Mobile Screens (e.g., iPhone SE) */
+@media (max-width: 375px) {
+  .games-page-container {
+    padding: 10px;
+  }
+
+  .games-page-container h3 {
+    font-size: 24px;
+  }
+
+  .games-carousel-item {
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .games-item {
+    width: 100%; /* Use almost full width on small mobile screens */
+  }
+
+  .games-image {
+    height: 180px; /* Reduce image height further */
+  }
+
+  .game-info h3 {
+    font-size: 0.9rem;
+  }
+
+  .game-info p {
+    font-size: 0.8rem;
+  }
+
+  .unique-delete-button {
+    padding: 5px 10px;
+    font-size: 0.8rem;
   }
 }

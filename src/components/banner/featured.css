@@ -51,7 +51,7 @@
   }
 
   .carousel-item img {
-    max-height: 300px; /* Set a max height for images on mobile */
+    max-height: 200px; /* Set a max height for images on mobile */
     
   }
 }

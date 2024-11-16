@@ -108,37 +108,72 @@
   transform: scale(1.05);
 }
 
-/* Media Query for Phones */
+/* Media Query for Small Mobile Screens (like iPhone SE) */
+@media (max-width: 375px) {
+  /* Adjust font size of header for smaller screens */
+  .browse-category-header {
+    font-size: 24px; /* Smaller font size */
+    margin: 10px 0; /* Reduce margin around the header */
+  }
+
+  /* Adjust search container */
+  .search-container {
+    max-width: 90%; /* Allow search bar to use more width */
+  }
+
+  /* Adjust carousel item layout */
+  .categorywise-carousel-item {
+    flex-direction: column; /* Stack carousel items vertically */
+    align-items: center; /* Center-align the items */
+    padding: 10px; /* Less padding for smaller screens */
+  }
+
+  /* Adjust category item width for small screens */
+  .categorywise-category-item {
+    width: 100%; /* Full width for category items */
+    margin: 10px 0; /* Center items vertically with margin */
+  }
+
+  /* Adjust category image size */
+  .categorywise-category-image {
+    height: 180px; /* Smaller images for smaller screens */
+    width: 100%; /* Full width for images */
+  }
+
+  /* Adjust category name font size */
+  .category-name {
+    font-size: 1rem; /* Smaller font size */
+  }
+
+  /* Adjust button size */
+  .games-add-btn {
+    font-size: 14px; /* Adjust button font size */
+    padding: 10px 15px; /* Adjust padding */
+  }
+}
+
+/* Media Query for tablets (under 768px) */
 @media (max-width: 768px) {
   .browse-category-header {
-    font-size: 28px; /* Reduce header font size */
-  }
-
-  .search-container {
-    max-width: 90%; /* Use more width on smaller screens */
-  }
-
-  .categorywise-category-item {
-    width: 90%; /* Full width for category items */
-    margin: 10px auto; /* Center items */
+    font-size: 28px; /* Reduce font size slightly */
   }
 
   .categorywise-carousel-item {
-    flex-direction: row; /* Stack items vertically */
-    align-items: center; /* Center align items */
-    padding: 10px; /* Reduce padding */
+    flex-direction: column; /* Stack items vertically for tablets */
+    padding: 15px; /* Adjust padding for tablets */
+  }
+
+  .categorywise-category-item {
+    width: 100%; /* Full width for category items on tablets */
+    margin: 10px 0;
   }
 
   .categorywise-category-image {
-    height: 180px; /* Adjust image height */
-  }
-
-  .add-game-text {
-    font-size: 1rem; /* Reduce font size */
+    height: 250px; /* Adjust image height for tablets */
   }
 
   .games-add-btn {
-    font-size: 14px; /* Adjust button font size */
-    padding: 10px 15px; /* Adjust button padding */
+    font-size: 15px; /* Adjust button font size */
+    padding: 12px 18px; /* Adjust button padding */
   }
 }

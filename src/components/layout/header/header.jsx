@@ -21,34 +21,47 @@ const Header = () => {
             <Link to="/">
               <img
                 src="assets/images/logo.png"
-                width="150"
-                height="120"
-                className="d-inline-block align-top"
+                className="logo-image"
                 alt="GameVault logo"
               />
             </Link>
           </Navbar.Brand>
 
           <Navbar.Toggle aria-controls="navbarScroll" />
-          <Navbar.Collapse id="navbarScroll">
-            <Nav className="me-auto">
-              <Nav.Link as={Link} to="/" className="nav-link-text">Store</Nav.Link>
-              <Nav.Link as={Link} to="/about" className="nav-link-text">About</Nav.Link>
-              <Nav.Link as={Link} to="/category" className="nav-link-text">Library</Nav.Link>
-              <Nav.Link as={Link} to="/community" className="nav-link-text">Community</Nav.Link>
+          <Navbar.Collapse id="navbarScroll" className="navbar-collapse-custom">
+            <Nav className="navbar-center">
+              <Nav.Link as={Link} to="/" className="nav-link-text">
+                Store
+              </Nav.Link>
+              <Nav.Link as={Link} to="/about" className="nav-link-text">
+                About
+              </Nav.Link>
+              <Nav.Link as={Link} to="/category" className="nav-link-text">
+                Library
+              </Nav.Link>
+              <Nav.Link as={Link} to="/community" className="nav-link-text">
+                Community
+              </Nav.Link>
+              <Nav.Link as={Link} to="/support" className="nav-link-text">
+                Support
+              </Nav.Link>
             </Nav>
 
-            <NavDropdown title="Account" id="navbarScrollingDropdown">
-              <NavDropdown.Item as={Link} to="/login">Login</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/create">Create Account</NavDropdown.Item>
-              {userId && ( // Render Profile link only if userId exists
-                <NavDropdown.Item as={Link} to={`/login/profile/${userId}`}>
-                  Profile
+            <Nav className="navbar-right">
+              <NavDropdown title="Account" id="navbarScrollingDropdown">
+                <NavDropdown.Item as={Link} to="/login">
+                  Login
                 </NavDropdown.Item>
-              )}
-            </NavDropdown>
-
-            <Nav.Link as={Link} to="/support" className="nav-link-text">Support</Nav.Link>
+                <NavDropdown.Item as={Link} to="/create">
+                  Create Account
+                </NavDropdown.Item>
+                {userId && (
+                  <NavDropdown.Item as={Link} to={`/login/profile/${userId}`}>
+                    Profile
+                  </NavDropdown.Item>
+                )}
+              </NavDropdown>
+            </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>

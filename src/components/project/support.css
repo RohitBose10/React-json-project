@@ -81,10 +81,10 @@ h2 {
   color: #fff;
 }
 
-/* Media Query for Phones */
-@media (max-width: 768px) {
+/* Media Query for smaller screens (like iPhone SE) */
+@media (max-width: 640px) {
   .categories, .game-tiles {
-    flex-direction: row; /* Stack categories and game tiles vertically */
+    flex-direction: column; /* Stack categories and game tiles vertically */
     align-items: center; /* Center align items */
   }
 
@@ -92,9 +92,10 @@ h2 {
     flex-basis: 80%; /* Increase width for smaller screens */
     margin-bottom: 20px; /* Add spacing between items */
   }
+
   .category img, .game-tile img {
-    height: 150px; /* Set a uniform height */
-    width: 100%; /* Ensures full width */
+    height: 200px; /* Adjust image height */
+    width: 300px; /* Ensures full width */
     object-fit: cover; /* Ensures the image covers the area */
   }
 

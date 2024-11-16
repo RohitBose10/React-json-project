@@ -1,10 +1,11 @@
-/* Base styles */
+/* General reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Featured section styling */
 .featured-section {
   padding: 20px;
   background-color: #0d1726;
@@ -14,67 +15,79 @@
 
 #p2, #p4 {
   color: white;
-  background-color: #0d1726;
   font-size: 20px;
-  width: 100%;
   padding-top: 10px;
   padding-bottom: 25px;
 }
 
-.multi-item-carousel .carousel-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Carousel container */
+.multi-item-carousel {
+  margin: 0 auto;
 }
 
+/* Carousel item content */
 .carousel-item-content {
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* Evenly distribute items */
   align-items: center;
 }
 
-.carousel-item-content .col-3 {
+.carousel-item-wrapper {
   padding: 5px;
-}
-
-/* Image and hover effects */
-.carousel-item-content img {
-  border-radius: 10px;
-  object-fit: cover;
-  height: 325px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
   cursor: pointer;
+  width: 23%; /* Keep 4 items per row for larger screens */
 }
 
-.carousel-item-content img:hover {
+.carousel-item-wrapper img {
+  width: 100%;
+  height: 325px; /* Unchanged for larger screens */
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-item-wrapper img:hover {
+  transform: scale(1.05);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
 }
 
 .category-caption {
-  text-align: center;
   margin-top: 10px;
   font-size: 18px;
   color: white;
 }
 
-/* Media Query for Phones */
+/* Media Queries */
 @media (max-width: 768px) {
-  .featured-section {
-    padding: 10px; /* Adjust padding for smaller screens */
-  }
-
   #p2, #p4 {
-    font-size: 16px; /* Reduce font size */
-    padding-top: 5px; /* Adjust padding */
-    padding-bottom: 15px; /* Adjust padding */
+    font-size: 18px; /* Slightly reduce font size for medium screens */
   }
 
-  .carousel-item-content img {
-    /* Allow images to scale properly */
-    max-height: 200px; /* Set a max height for mobile */
+  .carousel-item-content {
+    justify-content: space-around; /* Adjust spacing for smaller screens */
+  }
+
+  .carousel-item-wrapper {
+    width: 48%; /* Show 2 items per row on medium screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-item-content {
+    flex-wrap: wrap; /* Allow wrapping for narrow screens */
+  }
+
+  .carousel-item-wrapper {
+    width: 100%; /* Show 1 item per row on iPhone SE */
+    padding: 10px 0;
+  }
+
+  .carousel-item-wrapper img {
+    height: auto; /* Ensure images maintain aspect ratio */
   }
 
   .category-caption {
-    font-size: 16px; /* Adjust font size */
+    font-size: 16px; /* Adjust font size for small screens */
   }
 }

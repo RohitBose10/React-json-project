@@ -8,80 +8,47 @@ function Categories() {
   return (
     <div className="featured-section">
       <label id="p2">Browse By Category</label>
-      <Carousel interval={3000} className="multi-item-carousel" >
-        <Carousel.Item onClick={() => navigate("/category")}>
-          <div className="carousel-item-content row">
-            <div className="col-3">
-              <img
-                className="d-block w-100"
-                src="assets/images/game7.jpg"
-                alt="openworld"
-              />
-              <div className="category-caption">Open World</div>
-            </div>
-            <div className="col-3">
-              <img
-                className="d-block w-100"
-                src="assets/images/game8.jpg"
-                alt="survival"
-              />
-              <div className="category-caption">Survival</div>
-            </div>
-            <div className="col-3">
-              <img
-                className="d-block w-100"
-                src="assets/images/game9.avif"
-                alt="adventure"
-              />
-              <div className="category-caption">Adventure</div>
-            </div>
-            <div className="col-3">
-              <img
-                className="d-block w-100"
-                src="assets/images/game3.webp"
-                alt="action"
-              />
-              <div className="category-caption">Action</div>
-            </div>
+      <Carousel interval={3000} className="multi-item-carousel">
+        <Carousel.Item>
+          <div className="carousel-item-content">
+            {[
+              { src: "assets/images/game7.jpg", alt: "openworld", caption: "Open World" },
+              { src: "assets/images/game8.jpg", alt: "survival", caption: "Survival" },
+              { src: "assets/images/game9.avif", alt: "adventure", caption: "Adventure" },
+              { src: "assets/images/game3.webp", alt: "action", caption: "Action" },
+            ].map((item, index) => (
+              <div
+                className="carousel-item-wrapper"
+                key={index}
+                onClick={() => navigate("/category")}
+              >
+                <img src={item.src} alt={item.alt} />
+                <div className="category-caption">{item.caption}</div>
+              </div>
+            ))}
           </div>
         </Carousel.Item>
       </Carousel>
+
       <label id="p4">Special Offers</label>
       <Carousel interval={3000} className="multi-item-carousel">
-        <Carousel.Item onClick={() => navigate("/category")}>
-          <div className="carousel-item-content row">
-            <div className="col-3">
-              <img
-                className="d-block w-100"
-                src="assets/images/game12.webp"
-                alt="pvp"
-              />
-              <div className="category-caption">PVP</div>
-            </div>
-            <div className="col-3">
-              <img
-                className="d-block w-100"
-                src="assets/images/game13.avif"
-                alt="action"
-              />
-              <div className="category-caption">Free to Play</div>
-            </div>
-            <div className="col-3">
-              <img
-                className="d-block w-100"
-                src="assets/images/game11.jpg"
-                alt="horror"
-              />
-              <div className="category-caption">Horror</div>
-            </div>
-            <div className="col-3">
-              <img
-                className="d-block w-100"
-                src="assets/images/game10.jpg"
-                alt="storyrich"
-              />
-              <div className="category-caption">Story-Rich</div>
-            </div>
+        <Carousel.Item>
+          <div className="carousel-item-content">
+            {[
+              { src: "assets/images/game12.webp", alt: "pvp", caption: "PVP" },
+              { src: "assets/images/game13.avif", alt: "action", caption: "Free to Play" },
+              { src: "assets/images/game11.jpg", alt: "horror", caption: "Horror" },
+              { src: "assets/images/game10.jpg", alt: "storyrich", caption: "Story-Rich" },
+            ].map((item, index) => (
+              <div
+                className="carousel-item-wrapper"
+                key={index}
+                onClick={() => navigate("/category")}
+              >
+                <img src={item.src} alt={item.alt} />
+                <div className="category-caption">{item.caption}</div>
+              </div>
+            ))}
           </div>
         </Carousel.Item>
       </Carousel>

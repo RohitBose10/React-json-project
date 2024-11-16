@@ -184,3 +184,158 @@
     margin-bottom: 0;
   }
 }
+/* Mobile Responsive Design for iPhone SE and similar (max-width: 480px) */
+/* Mobile Responsive Design for iPhone SE and similar (max-width: 480px) */
+@media (max-width: 480px) {
+  .profile-container {
+    flex-direction: column;
+    padding: 10px; /* Reduced padding for a compact layout */
+  }
+
+  /* Profile Photo Section */
+  .profile-photo-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .profile-photo {
+    width: 180px; /* Slightly smaller size for better fit */
+    height: 180px;
+    border-radius: 10px; /* Reduced border radius for smaller photo */
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 10px;
+    border: 3px solid #ffffff; /* Slightly thinner border */
+  }
+
+  .profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .profile-photo-section h4 {
+    font-size: 1.1rem; /* Smaller font size for username */
+    margin-top: 8px;
+  }
+
+  /* Profile Details Section */
+  .profile-details-section {
+    width: 100%;
+    padding: 10px; /* Reduced padding for smaller screens */
+    background-color: #24364f;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .profile-details-section h4 {
+    font-size: 1.3rem; /* Adjusted font size for title */
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .profile-detail-item {
+    margin-bottom: 8px; /* Reduced spacing */
+  }
+
+  .profile-detail-item label {
+    font-size: 0.85rem; /* Smaller font size for labels */
+    color: #cccccc; /* Lighter text color for better visibility */
+    margin-bottom: 3px;
+  }
+
+  .profile-detail-item input {
+    width: 100%;
+    padding: 7px; /* Reduced padding for input fields */
+    font-size: 0.85rem; /* Adjusted input font size */
+    border-radius: 5px;
+    border: 1px solid #00bfff; /* Consistent border color */
+    background-color: #112240;
+    color: white;
+  }
+
+  /* Profile Buttons */
+  .profile-buttons {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Space between buttons */
+    margin-top: 20px;
+  }
+
+  .profile-buttons button {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.95rem; /* Smaller button font size */
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  .profile-buttons button:hover {
+    background-color: #0056b3;
+  }
+
+  /* Edit Profile Container */
+  .editprofile-container {
+    width: 100%; /* Almost full width for better usability */
+    height: 100vh; /* Use most of the viewport height */
+
+    right: -100%; /* Start hidden off-screen */
+    padding: 15px;
+    background-color: #24364f;
+    border-radius: 10px;
+    color: white;
+    overflow-y: auto; /* Enable scrolling if content overflows */
+  }
+
+  .editprofile-container.open {
+    right: 0; /* Slide in from the right */
+  }
+
+  .editform {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between form fields */
+  }
+
+  .editform label {
+    font-size: 0.85rem; /* Smaller font size for labels */
+    color: #cccccc; /* Lighter text color */
+  }
+
+  .editform input {
+    padding: 8px; /* Reduced padding */
+    font-size: 0.85rem; /* Adjusted input font size */
+    border-radius: 5px;
+    border: 1px solid #00bfff;
+    background-color: #112240;
+    color: white;
+  }
+
+  /* Buttons inside Edit Profile Container */
+  .editprofile-container button {
+    width: 100%; /* Full width button */
+    padding: 10px;
+    font-size: 0.95rem; /* Adjusted button font size */
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  .editprofile-container button:hover {
+    background-color: #0056b3;
+  }
+
+  .edit-buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between Save and Cancel buttons */
+  }
+}

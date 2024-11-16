@@ -136,3 +136,71 @@
     max-width: 100%; /* Ensure both sections take full width on mobile */
   }
 }
+/* Mobile Responsive Design for iPhone SE and similar (max-width: 480px) */
+@media (max-width: 480px) {
+  .unique-details-page {
+    padding: 20px; /* Reduced padding for smaller screens */
+  }
+
+  .unique-details-header {
+    margin-bottom: 30px; /* Less margin on top */
+  }
+
+  .unique-details-header h2 {
+    font-size: 1.5rem; /* Smaller font size for the header */
+  }
+
+  .unique-details-content {
+    gap: 20px; /* Reduced gap between content sections */
+  }
+
+  .unique-details-image-section {
+    max-width: 90%; /* Limit width for better fit on small screens */
+  }
+
+  .unique-details-image-section img {
+    max-width: 100%; /* Ensure image fits within the container */
+    height: auto; /* Maintain responsive height */
+    border-radius: 10px; /* Slightly smaller border radius */
+  }
+
+  .unique-details-info-section {
+    max-width: 90%; /* Use most of the screen width */
+    padding: 15px; /* Reduced padding */
+  }
+
+  .unique-info-card {
+    gap: 10px; /* Less gap between rows */
+  }
+
+  .unique-details-row {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align text to the left */
+    padding: 8px 0; /* Reduce padding for less height */
+  }
+
+  .unique-details-row h5 {
+    font-size: 1rem; /* Smaller font size for labels */
+    margin-bottom: 5px; /* Add space below the label */
+  }
+
+  .unique-details-row h4,
+  .unique-details-row h3,
+  .unique-details-row h6 {
+    font-size: 1.1rem; /* Smaller font size for details */
+  }
+
+  .unique-buy-button,
+  .unique-edit-button {
+    padding: 8px 16px; /* Reduced padding for buttons */
+    font-size: 1rem; /* Smaller font size for buttons */
+    width: 100%; /* Full width buttons */
+    margin-bottom: 10px; /* Space between buttons */
+  }
+
+  .unique-details-buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: stretch; /* Stretch buttons to full width */
+  }
+}
+
