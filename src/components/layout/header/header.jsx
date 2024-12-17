@@ -48,19 +48,32 @@ const Header = () => {
             </Nav>
 
             <Nav className="navbar-right">
-              <NavDropdown title="Account" id="navbarScrollingDropdown">
-                <NavDropdown.Item as={Link} to="/login">
-                  Login
-                </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/create">
-                  Create Account
-                </NavDropdown.Item>
-                {userId && (
+              {userId ? (
+                <NavDropdown title="Account" id="navbarScrollingDropdown">
                   <NavDropdown.Item as={Link} to={`/login/profile/${userId}`}>
                     Profile
                   </NavDropdown.Item>
-                )}
-              </NavDropdown>
+                  <NavDropdown.Item
+                    as={Link}
+                    to="/"
+                    onClick={() => {
+                      localStorage.removeItem("userId");
+                      setUserId(null);
+                    }}
+                  >
+                    Logout
+                  </NavDropdown.Item>
+                </NavDropdown>
+              ) : (
+                <NavDropdown title="Account" id="navbarScrollingDropdown">
+                  <NavDropdown.Item as={Link} to="/login">
+                    Login
+                  </NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/create">
+                    Create Account
+                  </NavDropdown.Item>
+                </NavDropdown>
+              )}
             </Nav>
           </Navbar.Collapse>
         </Container>

@@ -55,6 +55,15 @@
 .navbar-nav .dropdown-menu {
   background-color: white;
 }
+/* Change hamburger button color on smaller screens */
+.navbar-toggler {
+  border-color: white; /* White border around the button */
+}
+
+.navbar-toggler-icon {
+  background-color: white;
+  border-radius: 5px; /* White background for the hamburger icon */
+}
 
 /* Media Queries for responsiveness */
 @media (max-width: 768px) {
