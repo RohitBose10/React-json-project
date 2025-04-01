@@ -34,8 +34,8 @@ const Routing = () => {
         <Route path="support" element={<SupportPage />} />
         <Route path="create" element={<Create />} />
         <Route path="login" element={<Login />} />
-        <Route path="login/profile/:id" element={<Profile />} />
-        <Route path="login/profile/:id/edit" element={<Edit />} />
+        <Route path="profile/:id" element={<Profile />} />
+        <Route path="profile/:id/edit" element={<Edit />} />
         <Route path="category" element={<CategoryWise />} />
         <Route path="games/:categoryName" element={<Games />} />
         <Route path="details/:id" element={<Details />} />

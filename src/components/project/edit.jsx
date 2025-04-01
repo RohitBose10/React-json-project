@@ -55,7 +55,7 @@ function Edit({ showEdit, onClose }) {
           icon: "success",
         });
         onClose();
-        navigate(`/login/profile/${id}`);
+        navigate(`/profile/${id}`);
       })
       .catch((err) => {
         alert("Error updating");

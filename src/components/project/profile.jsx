@@ -64,7 +64,9 @@ const Profile = () => {
           <img src={state.pro_img} alt="Profile" />
         </div>
         <br />
-        <h4 style={{ fontWeight: "bold", color: "black" }}>{state.username}</h4>
+        <h4 style={{ fontWeight: "bold", color: "#ffffff" }}>
+          Welcome {state.username} !
+        </h4>
       </div>
 
       <div className="profile-details-section">

@@ -28,7 +28,7 @@ const Login = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log("Received data", data);
-  
+
     if (!data.email || !data.password) {
       Swal.fire({
         title: "Oops!",
@@ -40,25 +40,26 @@ const Login = () => {
         .get(api)
         .then((res) => {
           const users = res.data;
-  
+
           // Find the user with matching email and password
           const user = users.find(
-            (user) => user.email === data.email && user.password === data.password
+            (user) =>
+              user.email === data.email && user.password === data.password
           );
-  
+
           if (user) {
             // Store user info in localStorage
             localStorage.setItem("userId", user.id);
             localStorage.setItem("userRole", user.role); // Save user role (admin/user)
-  
+
             Swal.fire({
               title: "Awesome!",
               text: "Welcome Back!",
               icon: "success",
             });
-  
+
             // Redirect to the profile page
-            navigate(`/login/profile/${user.id}`);
+            navigate(`/`);
             window.location.reload();
           } else {
             Swal.fire({
@@ -78,7 +79,6 @@ const Login = () => {
         });
     }
   };
-  
 
   return (
     <div className="new-create-page">
